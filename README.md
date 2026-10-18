@@ -10,6 +10,14 @@ MatRisk AI is a local research dashboard that brings materials-property records,
 
 *Illustrative project overview. The infographic is not a live dashboard capture or a statement of data provenance; implemented capabilities and evidence limits are documented below.*
 
+## Live Demo
+
+Explore the deployed MatRisk AI application:
+
+**[Launch MatRisk AI](https://matrisk-ai-rrwtauduv5p8qqtpljhe5e.streamlit.app/)**
+
+MatRisk AI is a data analytics and intelligence platform combining materials science insights, commodity analytics, infrastructure risk assessment, and ESG indicators.
+
 ## Contents
 
 - [Overview and scope](#overview-and-scope)
