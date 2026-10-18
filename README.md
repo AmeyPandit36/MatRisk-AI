@@ -4,6 +4,14 @@ MatRisk AI is a local research dashboard for exploring relationships among mater
 
 The supplied project brief frames the broader educational objective as connecting materials science with financial risk analysis. It also proposes advanced models and a gamified simulation. The current repository is a narrower, tabular analytics prototype: its descriptive views, experimental baseline evaluations, and heuristic candidate ranking are implemented; the proposed physics-informed or crystal-structure models, calibrated failure forecasts, generative design system, and simulation game are not. The dashboard is not an autonomous decision system or a validated predictive platform.
 
+## Live Demo
+
+Explore the deployed MatRisk AI application:
+
+**[Launch MatRisk AI](https://matrisk-ai-rrwtauduv5p8qqtpljhe5e.streamlit.app/)**
+
+MatRisk AI is a data analytics and intelligence platform combining materials science insights, commodity analytics, infrastructure risk assessment, and ESG indicators.
+
 ## Contents
 
 - [Author](#author)
