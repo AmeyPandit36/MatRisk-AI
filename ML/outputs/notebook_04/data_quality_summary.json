@@ -1,0 +1,14 @@
+{
+  "rows": 5000,
+  "columns": 24,
+  "duplicate_bridge_id_rows": 0,
+  "missing_bridge_id": 0,
+  "condition_rating_outside_1_9": 5,
+  "age_negative": 0,
+  "corrosion_rate_negative": 0,
+  "remaining_thickness_gt_original": 0,
+  "structurally_deficient_values": [
+    0,
+    1
+  ]
+}

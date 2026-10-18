@@ -1,0 +1,28 @@
+{
+  "notebook": "06_esg_element_price_coverage",
+  "dataset_rows": {
+    "DS1": 5500,
+    "DS5": 5280,
+    "DS4": 22952
+  },
+  "formula_parse_success_rate": 1.0,
+  "complete_latest_element_price_coverage_rate": 0.32636363636363636,
+  "latest_element_price_date": "2024-12-01",
+  "elements_with_latest_price": 40,
+  "raw_element_cost_rows": 1795,
+  "limitations": [
+    "Raw-element cost proxy excludes manufacturing, processing, energy, transport, waste and lifecycle costs.",
+    "Only formulas with complete element price coverage receive a cost estimate.",
+    "DS-4 carbon intensity values are commodity-level indicators, not material-specific lifecycle assessments.",
+    "No complete ESG score is computed because environmental, social and governance coverage is insufficient.",
+    "Results are exploratory and depend on the supplied dataset provenance."
+  ],
+  "outputs": [
+    "element_coverage_by_material_frequency.csv",
+    "material_price_coverage_summary.csv",
+    "commodity_carbon_indicator_summary.csv",
+    "material_element_cost_estimates.csv",
+    "material_price_coverage.png",
+    "raw_element_cost_distribution.png"
+  ]
+}

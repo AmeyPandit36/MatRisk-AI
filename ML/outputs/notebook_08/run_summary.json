@@ -1,0 +1,60 @@
+{
+  "generated_at_utc": "2026-10-18T15:37:50.001611+00:00",
+  "project_root": "C:\\Users\\Amey Ravindra Pandit\\Downloads\\MAT Risk",
+  "notebook_outputs_root": "C:\\Users\\Amey Ravindra Pandit\\Downloads\\MAT Risk\\ML\\outputs",
+  "artifact_checks": {
+    "expected_artifacts": 12,
+    "found": 12,
+    "missing": 0
+  },
+  "summary_checks": {
+    "notebooks_expected": 7,
+    "readable_summaries": 7
+  },
+  "metric_registry_rows": 60,
+  "limitations": [
+    {
+      "area": "Materials property prediction",
+      "status": "experimental",
+      "limitation": "Grouped validation results must be reviewed per target; weak baseline performance is not hidden by this registry."
+    },
+    {
+      "area": "Crystal graph neural network",
+      "status": "blocked_by_data",
+      "limitation": "DS-1 has no crystal coordinates or atomic structures, so a genuine crystal-structure GNN is not supported by this sample alone."
+    },
+    {
+      "area": "Commodity forecasting",
+      "status": "experimental",
+      "limitation": "Chronological test results do not establish profitability; point-in-time provenance of precomputed features must be verified."
+    },
+    {
+      "area": "Infrastructure survival / RUL",
+      "status": "blocked_by_data",
+      "limitation": "Cross-sectional bridge snapshot lacks event-time and censoring cohort needed for validated survival analysis."
+    },
+    {
+      "area": "Financial expected loss",
+      "status": "scenario_only",
+      "limitation": "Failure-event sample is not a demonstrated representative non-failed portfolio; calibrated PD and actuarial EL are unsupported."
+    },
+    {
+      "area": "ESG",
+      "status": "partial_coverage",
+      "limitation": "Commodity-level carbon indicators are not a complete material-specific life-cycle assessment."
+    },
+    {
+      "area": "Inverse design",
+      "status": "screening_only",
+      "limitation": "Current approach ranks existing records and does not generate or experimentally validate new materials."
+    }
+  ],
+  "interpretation": "This is an artifact/reproducibility inventory, not a scientific certification. Missing files are reported as missing. Metrics are not combined across incompatible tasks.",
+  "outputs": [
+    "artifact_inventory.csv",
+    "summary_inventory.csv",
+    "metrics_registry.csv",
+    "limitations_register.csv",
+    "run_summary.json"
+  ]
+}

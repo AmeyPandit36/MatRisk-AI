@@ -1,0 +1,23 @@
+{
+  "notebook": "01_ds1_material_properties_baseline",
+  "dataset_path": "C:\\Users\\Amey Ravindra Pandit\\Downloads\\MAT Risk\\Data\\raw\\DS1_material_properties_5500.csv",
+  "rows_total": 5500,
+  "rows_modelled": 5500,
+  "train_rows": 4387,
+  "test_rows": 1113,
+  "connected_groups": 3730,
+  "group_overlap": 0,
+  "chemical_system_overlap": 0,
+  "material_id_overlap": 0,
+  "targets": [
+    "formation_energy_per_atom_eV",
+    "band_gap_eV",
+    "bulk_modulus_GPa",
+    "shear_modulus_GPa"
+  ],
+  "selection_note": "Single grouped holdout comparison; exploratory baseline, not production validation.",
+  "outputs": [
+    "metrics.csv",
+    "run_summary.json"
+  ]
+}

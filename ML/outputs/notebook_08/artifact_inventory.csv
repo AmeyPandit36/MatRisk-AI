@@ -1,0 +1,13 @@
+notebook,description,expected_artifact,status,path
+01_materials_baseline,Grouped DS1 baseline comparison,run_summary.json,found,ML\outputs\notebook_01\run_summary.json
+01_materials_baseline,Grouped DS1 baseline comparison,metrics.csv,found,ML\outputs\notebook_01\metrics.csv
+02_materials_feature_engineering,Grouped CV and selected materials models,grouped_cv_comparison.csv,found,ML\outputs\notebook_02\grouped_cv_comparison.csv
+02_materials_feature_engineering,Grouped CV and selected materials models,selected_model_results.csv,found,ML\outputs\notebook_02\selected_model_results.csv
+02_materials_feature_engineering,Grouped CV and selected materials models,run_summary.json,found,ML\outputs\notebook_02\run_summary.json
+03_commodity_forecasting,Chronological commodity forecast and ablation,validation_model_comparison.csv,found,ML\outputs\notebook_03\validation_model_comparison.csv
+03_commodity_forecasting,Chronological commodity forecast and ablation,heldout_test_comparison.csv,found,ML\outputs\notebook_03\heldout_test_comparison.csv
+03_commodity_forecasting,Chronological commodity forecast and ablation,run_summary.json,found,ML\outputs\notebook_03\run_summary.json
+04_infrastructure_condition,Infrastructure condition prediction and risk proxy,run_summary.json,found,ML\outputs\notebook_04\run_summary.json
+05_financial_insurance,Portfolio exposure and event-severity analysis,run_summary.json,found,ML\outputs\notebook_05\run_summary.json
+06_esg_element_prices,Element price coverage and ESG-related indicators,run_summary.json,found,ML\outputs\notebook_06\run_summary.json
+07_inverse_design,Cost-constrained ranking of existing material records,run_summary.json,found,ML\outputs\notebook_07\run_summary.json

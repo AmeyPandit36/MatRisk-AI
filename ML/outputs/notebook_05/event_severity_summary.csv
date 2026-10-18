@@ -1,0 +1,2 @@
+event_rows_supplied,valid_rows_for_severity,median_repair_cost_USD,mean_repair_cost_USD,median_reported_loss_ratio,mean_reported_loss_ratio,p95_repair_cost_USD,p99_repair_cost_USD,reported_loss_ratio_vs_recomputed_abs_diff_median
+2000,2000,204810.5,538965.4575,0.20575,0.2995872,2100387.8499999996,4568819.639999999,2.5659254550471772e-05

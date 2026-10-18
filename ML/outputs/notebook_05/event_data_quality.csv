@@ -1,0 +1,2 @@
+rows,duplicate_event_ids,repair_cost_gt_replacement_value,nonpositive_replacement_value,negative_repair_cost,loss_ratio_outside_0_1
+2000,0,85,0,0,85

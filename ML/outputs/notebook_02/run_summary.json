@@ -1,0 +1,82 @@
+{
+  "dataset_path": "C:\\Users\\Amey Ravindra Pandit\\Downloads\\MAT Risk\\Data\\raw\\DS1_material_properties_5500.csv",
+  "rows_total": 5500,
+  "rows_formula_parsed": 5500,
+  "rows_modelled": 5500,
+  "n_elements": 62,
+  "train_rows": 4454,
+  "test_rows": 1046,
+  "connected_groups": 3730,
+  "group_overlap": 0,
+  "chemical_system_overlap": 0,
+  "material_id_overlap": 0,
+  "cv_folds": 3,
+  "model_selection_metric": "mean grouped-CV MAE on training set",
+  "targets": [
+    "formation_energy_per_atom_eV",
+    "band_gap_eV",
+    "bulk_modulus_GPa",
+    "shear_modulus_GPa"
+  ],
+  "feature_sets": [
+    "composition_only",
+    "composition_plus_structure"
+  ],
+  "selected_models": [
+    {
+      "target": "band_gap_eV",
+      "feature_set": "composition_only",
+      "model": "DummyMean",
+      "CV_MAE_mean": 2.0295302680379925,
+      "CV_MAE_std": 0.01706898903029261,
+      "MAE": 1.9759106983560872,
+      "RMSE": 2.4532628633269025,
+      "R2": -0.0002011507907251353,
+      "Dummy_test_MAE": 1.9759106983560872,
+      "test_MAE_improvement_pct": 0.0
+    },
+    {
+      "target": "bulk_modulus_GPa",
+      "feature_set": "composition_only",
+      "model": "DummyMean",
+      "CV_MAE_mean": 66.36385529420657,
+      "CV_MAE_std": 0.6489170218801822,
+      "MAE": 68.33989540842828,
+      "RMSE": 84.66589508414084,
+      "R2": -7.424806147149354e-05,
+      "Dummy_test_MAE": 68.33989540842828,
+      "test_MAE_improvement_pct": 0.0
+    },
+    {
+      "target": "formation_energy_per_atom_eV",
+      "feature_set": "composition_only",
+      "model": "DummyMean",
+      "CV_MAE_mean": 1.2212917934241674,
+      "CV_MAE_std": 0.025360883179768406,
+      "MAE": 1.2127097656863746,
+      "RMSE": 1.4902074468779902,
+      "R2": -0.00105109109155066,
+      "Dummy_test_MAE": 1.2127097656863746,
+      "test_MAE_improvement_pct": 0.0
+    },
+    {
+      "target": "shear_modulus_GPa",
+      "feature_set": "composition_only",
+      "model": "DummyMean",
+      "CV_MAE_mean": 39.352611751442474,
+      "CV_MAE_std": 0.4962893896292408,
+      "MAE": 41.83504667212148,
+      "RMSE": 53.482132976214054,
+      "R2": -0.0001322222040536225,
+      "Dummy_test_MAE": 41.83504667212148,
+      "test_MAE_improvement_pct": 0.0
+    }
+  ],
+  "limitations": [
+    "Experimental sample data; metrics do not establish scientific validity.",
+    "Flat formula parser does not support parentheses, hydrates, charges, or fractional syntax beyond decimal stoichiometry.",
+    "Grouped validation estimates performance on held-out connected chemical-system/material-ID groups.",
+    "No crystal coordinates or atomic structures are supplied, so crystal-graph models cannot be trained from this CSV alone.",
+    "Do not repeatedly tune against the held-out test set."
+  ]
+}

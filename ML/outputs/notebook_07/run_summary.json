@@ -1,0 +1,39 @@
+{
+  "ds1_rows": 5500,
+  "formula_parse_success_rows": 5500,
+  "elements_with_latest_prices": 40,
+  "latest_price_date_across_elements": "2024-12-01",
+  "complete_price_coverage_rows": 1795,
+  "complete_price_coverage_fraction": 0.32636363636363636,
+  "candidates_passing_constraints": 647,
+  "constraints": {
+    "min_bulk_modulus_GPa": 40.0,
+    "min_shear_modulus_GPa": 20.0,
+    "max_energy_above_hull_eV": 0.1,
+    "max_raw_element_cost_usd_per_kg": null,
+    "band_gap_eV_range": [
+      0.0,
+      3.0
+    ],
+    "require_stable_label": true
+  },
+  "ranking_weights": {
+    "bulk": 0.35,
+    "shear": 0.3,
+    "cost": 0.25,
+    "energy_above_hull": 0.1
+  },
+  "limitations": [
+    "Ranks existing dataset records; does not generate new chemical compositions.",
+    "Property values are supplied dataset values, not newly predicted or experimentally verified.",
+    "Cost is a composition-weighted raw-element price proxy, not manufacturing or lifecycle cost.",
+    "Formula parser only accepts flat formulas; unsupported syntax is flagged.",
+    "Ranking score is a heuristic and not a calibrated physical utility function.",
+    "Dataset provenance and price source provenance are not independently verified."
+  ],
+  "outputs": [
+    "C:\\Users\\Amey Ravindra Pandit\\Downloads\\MAT Risk\\ML\\outputs\\notebook_07\\material_cost_coverage.csv",
+    "C:\\Users\\Amey Ravindra Pandit\\Downloads\\MAT Risk\\ML\\outputs\\notebook_07\\ranked_material_candidates.csv",
+    "C:\\Users\\Amey Ravindra Pandit\\Downloads\\MAT Risk\\ML\\outputs\\notebook_07\\latest_element_prices_used.csv"
+  ]
+}

@@ -1,0 +1,4 @@
+quantile,empirical_VaR_USD,empirical_TVaR_USD,tail_event_count,interpretation
+0.9,1290379.7000000002,2757063.34,200,Conditional on supplied event sample; not annual portfolio VaR
+0.95,2100387.8499999996,3858565.56,100,Conditional on supplied event sample; not annual portfolio VaR
+0.99,4568819.639999999,7850272.8,20,Conditional on supplied event sample; not annual portfolio VaR

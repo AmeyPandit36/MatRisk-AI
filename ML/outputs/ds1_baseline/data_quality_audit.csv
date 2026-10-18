@@ -1,0 +1,13 @@
+,value
+rows,5500.0
+columns,18.0
+missing_cells,0.0
+duplicate_full_rows,0.0
+duplicate_material_id_rows,21.0
+unique_material_ids,5479.0
+poisson_outside_open_bounds,0.0
+nonpositive_bulk_or_shear,0.0
+nonpositive_density,0.0
+stable_with_nonnegative_formation_energy,369.0
+elastic_relation_relative_discrepancy_over_5pct,1765.0
+elastic_relation_relative_discrepancy_median,0.033999462379396786

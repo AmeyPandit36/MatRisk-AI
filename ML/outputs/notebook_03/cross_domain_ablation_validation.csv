@@ -1,0 +1,3 @@
+feature_set,model,validation_MAE,validation_RMSE,validation_R2,validation_directional_accuracy
+price_only,ZeroReturn,0.01663013546511628,0.021193660054187005,-4.963060113238882e-05,0.5055232558139535
+price_plus_cross_domain,ZeroReturn,0.01663013546511628,0.021193660054187005,-4.963060113238882e-05,0.49680232558139537

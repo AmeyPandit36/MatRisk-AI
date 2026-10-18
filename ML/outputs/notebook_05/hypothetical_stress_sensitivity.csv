@@ -1,0 +1,5 @@
+assumed_loss_fraction_of_replacement_value,hypothetical_gross_loss_M,hypothetical_loss_vs_total_loan,is_probability_estimate
+0.01,34.0935,0.01816537371326272,False
+0.03,102.28049999999999,0.05449612113978815,False
+0.05,170.4675,0.0908268685663136,False
+0.1,340.935,0.1816537371326272,False

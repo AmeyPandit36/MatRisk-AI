@@ -1,0 +1,8 @@
+area,status,limitation
+Materials property prediction,experimental,Grouped validation results must be reviewed per target; weak baseline performance is not hidden by this registry.
+Crystal graph neural network,blocked_by_data,"DS-1 has no crystal coordinates or atomic structures, so a genuine crystal-structure GNN is not supported by this sample alone."
+Commodity forecasting,experimental,Chronological test results do not establish profitability; point-in-time provenance of precomputed features must be verified.
+Infrastructure survival / RUL,blocked_by_data,Cross-sectional bridge snapshot lacks event-time and censoring cohort needed for validated survival analysis.
+Financial expected loss,scenario_only,Failure-event sample is not a demonstrated representative non-failed portfolio; calibrated PD and actuarial EL are unsupported.
+ESG,partial_coverage,Commodity-level carbon indicators are not a complete material-specific life-cycle assessment.
+Inverse design,screening_only,Current approach ranks existing records and does not generate or experimentally validate new materials.

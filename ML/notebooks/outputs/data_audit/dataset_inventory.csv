@@ -1,0 +1,7 @@
+dataset,rows,columns,missing_cells,duplicate_full_rows,memory_mb
+DS1,5500,18,0,0,1.78
+DS2,22952,24,2760,0,6.42
+DS3,5000,24,0,0,2.4
+DS4,22952,12,712,0,4.32
+DS5,5280,5,0,0,0.67
+DS6,2000,18,0,0,1.06

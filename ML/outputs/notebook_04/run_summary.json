@@ -1,0 +1,82 @@
+{
+  "dataset_path": "C:\\Users\\Amey Ravindra Pandit\\Downloads\\MAT Risk\\Data\\raw\\DS3_infrastructure_bridges_5000.csv",
+  "rows": 5000,
+  "columns": 24,
+  "train_rows": 3996,
+  "test_rows": 999,
+  "train_test_bridge_id_overlap": 0,
+  "target": "condition_rating",
+  "predictor_columns": [
+    "bridge_type",
+    "material",
+    "year_built",
+    "age_years",
+    "design_life_years",
+    "location",
+    "corrosion_environment",
+    "corrosion_rate_mm_yr",
+    "adt",
+    "deck_area_sqft",
+    "tensile_strength_MPa",
+    "yield_strength_MPa",
+    "paris_C",
+    "paris_m",
+    "original_thickness_mm",
+    "fatigue_cycles_millions"
+  ],
+  "excluded_columns": [
+    "bridge_id",
+    "condition_rating",
+    "insurance_premium_K_yr",
+    "last_inspection_date",
+    "loan_outstanding_M",
+    "remaining_thickness_mm",
+    "replacement_cost_M",
+    "structurally_deficient"
+  ],
+  "best_regression_model_by_test_MAE_for_diagnostic_only": "ExtraTrees",
+  "regression_metrics": [
+    {
+      "model": "ExtraTrees",
+      "MAE": 0.4663478182768306,
+      "RMSE": 0.5781110695248166,
+      "R2": 0.8015484198557763
+    },
+    {
+      "model": "DummyMedian",
+      "MAE": 0.934934934934935,
+      "RMSE": 1.4042691949807815,
+      "R2": -0.17093484156326944
+    }
+  ],
+  "best_classifier_by_test_macro_f1_for_diagnostic_only": "ExtraTreesClassifier",
+  "classification_metrics": [
+    {
+      "model": "ExtraTreesClassifier",
+      "accuracy": 0.5755755755755756,
+      "balanced_accuracy": 0.4746453260831911,
+      "macro_f1": 0.4470112448896869
+    },
+    {
+      "model": "DummyMostFrequent",
+      "accuracy": 0.3813813813813814,
+      "balanced_accuracy": 0.1111111111111111,
+      "macro_f1": 0.06135265700483092
+    }
+  ],
+  "risk_proxy": {
+    "name": "heuristic_risk_proxy_0_100",
+    "weights": {
+      "age_vs_design_life": 0.3,
+      "corrosion_relative_to_p95": 0.3,
+      "condition_rating": 0.4
+    },
+    "warning": "Not calibrated; not a probability of failure, survival estimate, or RUL prediction."
+  },
+  "limitations": [
+    "Cross-sectional data; no observed event times/censoring cohort for survival analysis.",
+    "Metrics describe only this supplied sample and split.",
+    "Dataset provenance and label-generation process are not independently verified.",
+    "Financial variables were excluded from condition predictors to reduce target-adjacent leakage."
+  ]
+}

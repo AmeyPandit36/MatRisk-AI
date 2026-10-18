@@ -1,0 +1,16 @@
+dataset,check,value,interpretation
+DS1,duplicate material_id rows,21,Investigate IDs; repeated IDs can invalidate row-level assumptions.
+DS1,"Poisson ratio outside (-1, 0.5)",0,Physics-bound check.
+DS1,nonpositive K or G,0,Physics-bound check.
+DS1,elastic relation discrepancy >5%,1765,E inferred from K and G/nu is inconsistent beyond 5%; review tolerance and source quality.
+DS1,stable label with formation energy >= 0,369,Check label definition and energy reference before using as a rule.
+DS2,"duplicate (date, commodity)",0,Must be zero before time-series merge.
+DS2,date range,2014-01-02 to 2024-12-31,Verify chronological ordering and source provenance.
+DS3,condition_rating == 0,5,README states rating range 1–9; zero requires investigation.
+DS3,bridge IDs duplicated,0,Must be zero for unique bridge rows.
+DS3,event time/censoring columns available,False,A single snapshot without observed event time and censoring cannot directly validate survival analysis.
+DS4,"duplicate (date, commodity)",0,Must be zero before merge.
+DS4,keys not present in DS2,0,Cross-domain merge keys should align.
+DS5,"duplicate (date, element)",0,Must be zero for monthly element-price panel.
+DS6,unique event IDs,2000,Event-only records are not a full exposed population.
+DS6,rows where repair cost exceeds replacement value,85,Review outliers and definition; do not silently cap.

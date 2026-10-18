@@ -1,0 +1,55 @@
+{
+  "notebook": "05_financial_exposure_expected_loss_insurance_risk",
+  "dataset_paths": {
+    "DS3": "C:\\Users\\Amey Ravindra Pandit\\Downloads\\MAT Risk\\Data\\raw\\DS3_infrastructure_bridges_5000.csv",
+    "DS6": "C:\\Users\\Amey Ravindra Pandit\\Downloads\\MAT Risk\\Data\\raw\\DS6_historical_failures_2000.csv"
+  },
+  "dataset_shapes": {
+    "DS3": [
+      5000,
+      24
+    ],
+    "DS6": [
+      2000,
+      18
+    ]
+  },
+  "portfolio_exposure": {
+    "bridge_count": 5000,
+    "loan_outstanding_total_M": 1876.84,
+    "replacement_cost_total_M": 3409.35,
+    "annual_premium_total_K": 56385.100000000006,
+    "mean_loan_outstanding_M": 0.375368,
+    "median_condition_rating": 8.0,
+    "loan_to_replacement_cost_ratio": 0.5504978954932759
+  },
+  "event_severity": {
+    "event_rows_supplied": 2000,
+    "valid_rows_for_severity": 2000,
+    "median_repair_cost_USD": 204810.5,
+    "mean_repair_cost_USD": 538965.4575,
+    "median_reported_loss_ratio": 0.20575,
+    "mean_reported_loss_ratio": 0.2995872,
+    "p95_repair_cost_USD": 2100387.8499999996,
+    "p99_repair_cost_USD": 4568819.639999999,
+    "reported_loss_ratio_vs_recomputed_abs_diff_median": 2.5659254550471772e-05
+  },
+  "assumptions": {
+    "stress_factors": [
+      0.01,
+      0.03,
+      0.05,
+      0.1
+    ],
+    "stress_scenarios_are_hypothetical": true,
+    "event_sample_var_tvar_is_not_annual_portfolio_risk": true,
+    "pd_lgd_expected_loss_not_calibrated": true
+  },
+  "limitations": [
+    "DS-3 is a snapshot and has no observed failure-time/censoring cohort.",
+    "DS-6 is an event sample without a denominator-complete exposure population.",
+    "Annual failure probability, PD, calibrated LGD and actuarial expected loss cannot be inferred from these files alone.",
+    "Stress losses are sensitivities based on assumed fractions, not forecasts.",
+    "Reported loss ratios are compared with repair cost divided by replacement value; definitions may differ."
+  ]
+}

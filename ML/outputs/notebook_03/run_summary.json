@@ -1,0 +1,45 @@
+{
+  "ds2_path": "C:\\Users\\Amey Ravindra Pandit\\Downloads\\MAT Risk\\Data\\raw\\DS2_commodity_prices_10yr.csv",
+  "ds4_path": "C:\\Users\\Amey Ravindra Pandit\\Downloads\\MAT Risk\\Data\\raw\\DS4_crossdomain_features_daily.csv",
+  "ds2_rows": 22952,
+  "ds4_rows": 22952,
+  "merged_rows": 22952,
+  "model_rows": 22944,
+  "commodities": [
+    "Aluminium",
+    "Cobalt_Index",
+    "Copper",
+    "Iron_Ore",
+    "Lithium_ETF",
+    "Nickel",
+    "RareEarth_ETF",
+    "Steel_HRC"
+  ],
+  "target": "next available row's daily_return within each commodity",
+  "split": "chronological per commodity: 70% train / 15% validation / 15% test",
+  "selection_metric": "validation MAE",
+  "selected_configuration": {
+    "feature_set": "price_only",
+    "model": "ZeroReturn"
+  },
+  "heldout_test_metrics": {
+    "selected_feature_set": "price_only",
+    "selected_model": "ZeroReturn",
+    "n_test": 3448,
+    "MAE": 0.016272171113689095,
+    "RMSE": 0.02079356082193361,
+    "R2": -0.00021638123405698373,
+    "directional_accuracy": NaN
+  },
+  "warning": "Synthetic/sample data and upstream feature timing not independently verified; do not claim tradable alpha.",
+  "outputs": [
+    "chronological_split_report.csv",
+    "cross_domain_ablation_validation.csv",
+    "cross_domain_ablation_validation.png",
+    "heldout_test_by_commodity.csv",
+    "heldout_test_comparison.csv",
+    "heldout_test_predictions.csv",
+    "run_summary.json",
+    "validation_model_comparison.csv"
+  ]
+}
